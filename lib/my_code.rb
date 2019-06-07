@@ -11,10 +11,11 @@ end
 
 def reduce(arr, start = 0)
   i = 0
-  result = start
+    puts arr.length
   while i < arr.length 
-    result =  yield(result, arr[i])
-    puts result
+
+    result =  yield(start, arr[i])
+    puts arr[i]
     i += 1
   end
   return result
