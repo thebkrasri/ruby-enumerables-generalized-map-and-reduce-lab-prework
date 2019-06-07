@@ -11,7 +11,10 @@ end
 
 def reduce(arr, start = 0)
     i = 0
-    if arr[i]
+    if arr[i].class == start.class
+      result = start
+    else
+      
   while i < arr.length 
     start =  yield(start, arr[i])
     i += 1
