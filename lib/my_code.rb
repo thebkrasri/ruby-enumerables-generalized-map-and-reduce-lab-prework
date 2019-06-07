@@ -14,10 +14,11 @@ def reduce(arr, start = 0)
     if arr[i].class == start.class
       result = start
     else
-      
+      result = nil
+    end
   while i < arr.length 
-    start =  yield(start, arr[i])
+    result =  yield(result, arr[i])
     i += 1
   end
-  return start
+  return result
 end
