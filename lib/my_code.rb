@@ -13,6 +13,9 @@ def reduce(arr, start = 0)
     i = 0
     if arr[i].class == start.class
       result = start
+    else
+      result = arr [i]
+      i = 1
     end
   while i < arr.length 
   puts arr[i]
