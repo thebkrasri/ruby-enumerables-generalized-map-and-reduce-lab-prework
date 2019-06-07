@@ -9,7 +9,7 @@ def map(arr)
    return new
 end
 
-def reduce(arr, start = 0)
+def reduce(arr, start = true)
   i = 0
   while i < arr.length 
     start =  yield(start, arr[i])
