@@ -13,8 +13,6 @@ def reduce(arr, start = 0)
     i = 0
     if arr[i].class == start.class
       result = start
-    else
-      result = nil
     end
   while i < arr.length 
     result =  yield(result, arr[i])
